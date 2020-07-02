@@ -305,7 +305,7 @@ nav a:hover {
     padding-bottom: 0;
 }
 
-.social-icons img {
+.social-icons svg {
     height: 50px;
     width: 50px;
     padding: 6px;
@@ -320,7 +320,7 @@ nav a:hover {
     margin: 10px 0 40px 0;
 }
 
-.social-icons img:hover {
+.social-icons svg:hover {
     opacity: 1;
     transform: scale(1.1);
     cursor: pointer;
