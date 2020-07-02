@@ -1,8 +1,6 @@
 // Variables
 let enter = document.getElementById('enter');
 
-// Letters appear from random y values when page loads
-
 // Show next page function
 const showNextPage = () => {
     gsap.timeline()

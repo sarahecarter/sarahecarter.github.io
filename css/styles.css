@@ -147,7 +147,7 @@ nav a:hover {
     text-align: left;
     margin-top: 0;
     padding-left: 10px;
-    font-size: 2.441em;
+    font-size: 1.953em;
     margin-bottom: 0;
     line-height: 0.2em;
     color: white;
@@ -172,7 +172,7 @@ nav a:hover {
     line-height: 1.3em;
     margin-top: 200px;
     margin-bottom: 200px;
-    font-size: 1.953em;
+    font-size: 1.563em;
     grid-area: intro;
 }
 
@@ -184,7 +184,7 @@ nav a:hover {
 .portfolio-title {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 2.441em;
+    font-size: 1.953em;
     font-family: 'Playfair Display', serif;
     letter-spacing: 0.5em;
 }
@@ -335,8 +335,8 @@ nav a:hover {
         padding-right: 5%;
         margin-top: 200px;
         margin-bottom: 200px;
-
     }
+
 }
 
 @media(min-width:768px) {
@@ -374,7 +374,6 @@ nav a:hover {
 
     .title {
         background-image: none;
-        background-attachment: none;
         height: auto;
         width: 100%;
         padding-top: 0;
@@ -410,6 +409,10 @@ nav a:hover {
         font-size: 1.25em;
         padding-left: 10px;
         padding-bottom: 50%;
+    }
+
+    .portfolio-title {
+        font-size: 2.441em;
     }
 
     .portfolio-icon {
