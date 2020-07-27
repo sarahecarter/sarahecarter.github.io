@@ -10,6 +10,10 @@ main {
 
 
 /* Overlay Styles */
+.transition {
+    display: none;
+}
+
 .content-move {
     display: flex;
     flex-direction: column;
@@ -274,17 +278,36 @@ nav a:hover {
     border: gray;
 }
 
-@keyframes slide {
+/* Skills Styles */
+.skills {
+    margin-top: 50px;
+}
 
-    0% {
-        left: -50%;
-        opacity: 0;
-    }
+.skills h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.441em;
+    padding-bottom: 0;
+    letter-spacing: 0.1em;
+}
 
-    100% {
-        left: 0;
-        opacity: 0.7
-    }
+.skills ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.skills li {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    background-color: lightslategray;
+    color: white;
+    font-size: 1em;
 }
 
 
@@ -340,6 +363,10 @@ nav a:hover {
 }
 
 @media(min-width:768px) {
+
+    .transition {
+        display: block;
+    }
 
     .content-move h1 {
         font-size: 7.451em ;
