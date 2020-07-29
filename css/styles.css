@@ -223,7 +223,7 @@ nav a:hover {
 }
 
 .project-info {
-    opacity: 0;
+    opacity: 70%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -231,7 +231,6 @@ nav a:hover {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
     transition: .5s ease;
     background-color: white;
     display: flex;
@@ -258,14 +257,6 @@ nav a:hover {
     border: 1px solid black;
     padding: 5px;
     border-radius: 8px;
-}
-
-.project:hover .project-info{
-    opacity: 0.7;
-}
-
-.project:hover {
-    transform: scale(1.05);
 }
 
 .project-link {
@@ -453,6 +444,18 @@ nav a:hover {
         grid-template-columns: auto auto;
         justify-items: center;
         padding: 3%
+    }
+
+    .project-info {
+        opacity: 0;
+    }
+
+    .project-info:hover {
+        opacity: 70%;
+    }
+
+    .project:hover {
+        transform: scale(1.05);
     }
 }
 
