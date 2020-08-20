@@ -136,20 +136,22 @@ nav a:hover {
 
 
 /* Title Styles */
-.title {
-    background-image: url("/img/sarah.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    height: 750px;
+.intro {
+    position: relative;
+}
+
+.intro img {
+    margin-top: 60px;
+    height: auto;
     width: 100%;
-    padding-top: 50px;
+    grid-area: picture;
 }
 
 .title-text {
-    position: absolute;
     text-align: left;
-    margin-top: 0;
+    position: absolute;
+    top: 9%;
+    left: 1%;
     padding-left: 10px;
     font-size: 1.953em;
     margin-bottom: 0;
@@ -165,18 +167,12 @@ nav a:hover {
 }
 
 
-.intro img {
-    display: none;
-    grid-area: picture;
-}
-
 .intro p {
     text-align: center;
     padding: 50px 10px 50px 10px;
     line-height: 1.3em;
-    margin-top: 100px;
-    margin-bottom: 200px;
     font-size: 1.563em;
+    margin: 50px 0 50px 0;
     grid-area: intro;
 }
 
@@ -343,15 +339,6 @@ nav a:hover {
 
 
 /* Media Queries */
-@media(min-width:320px) {
-    .intro p {
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-top: 200px;
-        margin-bottom: 200px;
-    }
-
-}
 
 @media(min-width:768px) {
 
@@ -388,13 +375,6 @@ nav a:hover {
         column-gap: 0;
         margin-bottom: 20px;
         max-height: 750px;
-    }
-
-    .title {
-        background-image: none;
-        height: auto;
-        width: 100%;
-        padding-top: 0;
     }
 
     .intro img {
@@ -467,13 +447,14 @@ nav a:hover {
     .title-text {
         padding: 0 10% 0 10%;
         font-size: 3.052em;
+        margin-bottom: 0;
     }
 
     .intro p {
-        padding: 0 20% 0 10%;
         font-size: 1.563em;
+        padding: 0 10% 0 10%;
     }
-    
+
     .portfolio {
         display: grid;
         grid-template-columns: auto auto auto;
