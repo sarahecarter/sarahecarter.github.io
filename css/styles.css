@@ -1,7 +1,8 @@
 * {
     box-sizing: border-box;
-    background-color: whitesmoke;
+    cursor: default;
 }
+
 
 main {
     font-family: 'Montserrat', sans-serif;
@@ -100,14 +101,14 @@ main {
 
 /* Nav Bar */
 nav {
-    padding: 20px;
+    padding: 20px 10px;
     font-family: 'Playfair Display', serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: fixed;
     top: 0;
-    background-color: whitesmoke;
+    background-color: #204E57;
     width: 100%;
     z-index: 200;
     overflow: hidden;
@@ -117,6 +118,7 @@ nav p {
     display: none;
     margin: 0;
     font-style: italic;
+    color: white;
     margin-right: 20%;
     letter-spacing: 0.1em;
     font-size: 1.25em;
@@ -124,9 +126,10 @@ nav p {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: white;
     opacity: 0.6;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 nav a:hover {
@@ -136,25 +139,20 @@ nav a:hover {
 
 
 /* Title Styles */
-.intro {
-    position: relative;
-}
-
 .intro img {
-    margin-top: 60px;
+    margin-top: 50px;
     height: auto;
     width: 100%;
     grid-area: picture;
 }
 
 .title-text {
-    text-align: left;
     position: absolute;
+    text-align: right;
     top: 9%;
-    left: 1%;
-    padding-left: 10px;
-    font-size: 1.953em;
-    margin-bottom: 0;
+    left: 35%;
+    font-size: 1.563rem;
+    margin: 0;
     line-height: 0.2em;
     color: white;
     grid-area: title;
@@ -166,6 +164,9 @@ nav a:hover {
     background: none;
 }
 
+.title-text h2 {
+    color: #1e3255;
+}
 
 .intro p {
     text-align: center;
@@ -181,6 +182,13 @@ nav a:hover {
 }
 
 /* Portfolio Styles */
+.portfolio-container {
+    background-image: url(/img/background.svg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
 .portfolio-title {
     text-align: center;
     margin-bottom: 30px;
@@ -191,6 +199,8 @@ nav a:hover {
 
 .portfolio-title h2 {
     margin-bottom: 0;
+    padding-top: 20px;
+    color: white;
 }
 
 .portfolio-icon {
@@ -216,6 +226,7 @@ nav a:hover {
     overflow: hidden;
     transition: 1s ease-in-out;
     border: 1px solid gray;
+    border-radius: 2%;
 }
 
 .project-info {
@@ -253,6 +264,7 @@ nav a:hover {
     border: 1px solid black;
     padding: 5px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .project-link {
@@ -268,14 +280,18 @@ nav a:hover {
 /* Skills Styles */
 .skills {
     margin-top: 50px;
+    background: #1e3255;
+    padding: 100px 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
 }
 
 .skills h2 {
     text-align: center;
-    font-family: 'Playfair Display', serif;
     font-size: 2.441em;
     padding-bottom: 0;
     letter-spacing: 0.1em;
+    color: white
 }
 
 .skills ul {
@@ -290,13 +306,13 @@ nav a:hover {
 .skills li {
     padding: 5px;
     margin: 5px;
-    border: 1px solid lightslategray;
+    border: 1px solid white;
     border-radius: 5px;
-    background-color: lightslategray;
-    color: white;
+    background-color: white;
+    color: #1e3255;
     font-size: 1em;
+    transition: 1.5s;
 }
-
 
 /* Contact Styles */
 .contact {
@@ -304,8 +320,8 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: black solid 1px;
-    margin-top: 150px;
+    margin-top: 0;
+    padding-top: 50px;
 }
 
 .contact h2 {
@@ -339,6 +355,11 @@ nav a:hover {
 
 
 /* Media Queries */
+@media(min-width:321px) {
+    .title-text {
+        font-size: 1.953rem;
+    } 
+}
 
 @media(min-width:768px) {
 
@@ -368,12 +389,11 @@ nav a:hover {
         height: auto;
         display: grid;
         grid-template-areas: 
-            "picture title "
-            "picture intro ";
+            "picture title"
+            "picture intro";
         grid-template-rows: auto auto;
         grid-template-columns: auto 40%;
         column-gap: 0;
-        margin-bottom: 20px;
         max-height: 750px;
     }
 
@@ -388,6 +408,7 @@ nav a:hover {
     .title-text {
         color: black;
         position: static;
+        text-align: left;
         width: 100%;
         margin-top: 40%;
         padding-left: 10px;
@@ -397,6 +418,7 @@ nav a:hover {
 
     .title-text h2 {
         margin-bottom: 0;
+        color: black;
     }
 
     .intro p {
@@ -407,10 +429,21 @@ nav a:hover {
         font-size: 1.25em;
         padding-left: 10px;
         padding-bottom: 50%;
+        margin-bottom: 0;
+    }
+
+    .portfolio-container {
+        background-size: 100%;
+        background-position: top;
     }
 
     .portfolio-title {
         font-size: 2.441em;
+        margin-top: 0;
+    }
+
+    .portfolio-title h2 {
+        margin-top: 0;
     }
 
     .portfolio-icon {
@@ -453,6 +486,11 @@ nav a:hover {
     .intro p {
         font-size: 1.563em;
         padding: 0 10% 0 10%;
+    }
+
+    .portfolio-container {
+        background-size: 100%;
+        background-position: top;
     }
 
     .portfolio {

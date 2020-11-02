@@ -19,3 +19,4 @@ const showNextPage = () => {
 
 // When user clicks on 'Enter' Show Next Page animation happens
 enter.addEventListener('click', showNextPage);
+

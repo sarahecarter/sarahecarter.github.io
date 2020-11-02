@@ -9,6 +9,7 @@
   "author": "sarah_carter",
   "license": "ISC",
   "dependencies": {
+    "locomotive-scroll": "^3.6.1",
     "normalize.css": "^8.0.1"
   }
 }
