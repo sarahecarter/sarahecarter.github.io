@@ -139,41 +139,33 @@ nav a:hover {
 
 
 /* Title Styles */
-.intro img {
-    margin-top: 50px;
-    height: auto;
-    width: 100%;
-    grid-area: picture;
+.profile-pic {
+    display: none;
 }
 
 .title-text {
-    position: absolute;
-    text-align: right;
-    top: 9%;
-    left: 35%;
-    font-size: 1.563rem;
-    margin: 0;
+    text-align: center;
+    margin-top: 40%;
+    font-size: 1.953rem;
     line-height: 0.2em;
-    color: white;
+    color: black;
     grid-area: title;
     background: none;
 }
 
-.title-text h1,
-.title-text h2 {
-    background: none;
-}
-
-.title-text h2 {
-    color: #1e3255;
+.circle-img {
+    height: auto;
+    width: 90%;
+    padding-left: 10%;
+    margin-top: 10px;
 }
 
 .intro p {
     text-align: center;
-    padding: 50px 10px 50px 10px;
+    padding: 15px 10px 50px 10px;
     line-height: 1.3em;
-    font-size: 1.563em;
-    margin: 50px 0 50px 0;
+    font-size: 1.563rem;
+    margin: 20px 0 50px 0;
     grid-area: intro;
 }
 
@@ -182,6 +174,14 @@ nav a:hover {
 }
 
 /* Portfolio Styles */
+h3 {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.2em;
+    color: white;
+}
+
 .portfolio-container {
     background-image: url(/img/background.svg);
     background-position: center;
@@ -227,6 +227,7 @@ nav a:hover {
     transition: 1s ease-in-out;
     border: 1px solid gray;
     border-radius: 2%;
+    height: 170px;
 }
 
 .project-info {
@@ -277,6 +278,56 @@ nav a:hover {
     border: gray;
 }
 
+/* Design Section and Carousel Styles */
+.design {
+    background-color: #1e3255;
+}
+
+.design h3 {
+    color: white;
+    margin-top: 0;
+}
+
+.design h4 {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    font-size: 1.25rem;
+    opacity: 0.9;
+    padding: 0 20px;
+}
+
+.redbubble {
+    border-radius: 10%;
+    height: 80px;
+    width: 80px;
+    display: block;
+    stroke: white;
+    transition: 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.redbubble:hover {
+    transform: rotate(10deg);
+    cursor: pointer;
+}
+
+.designs-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.designs-container img {
+    width : 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 2%;
+}
+
 /* Skills Styles */
 .skills {
     margin-top: 50px;
@@ -300,7 +351,7 @@ nav a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0;
+    padding: 0 10px;
 }
 
 .skills li {
@@ -312,6 +363,7 @@ nav a:hover {
     color: #1e3255;
     font-size: 1em;
     transition: 1.5s;
+    opacity: 0.9;
 }
 
 /* Contact Styles */
@@ -355,14 +407,8 @@ nav a:hover {
 
 
 /* Media Queries */
-@media(min-width:321px) {
-    .title-text {
-        font-size: 1.953rem;
-    } 
-}
 
 @media(min-width:768px) {
-
     .transition {
         display: block;
     }
@@ -392,29 +438,32 @@ nav a:hover {
             "picture title"
             "picture intro";
         grid-template-rows: auto auto;
-        grid-template-columns: auto 40%;
+        grid-template-columns: 550px auto;
         column-gap: 0;
         max-height: 750px;
     }
 
-    .intro img {
+    .profile-pic {
         display: block;
         height: auto;
         width: 100%;
         max-height: 750px;
         max-width: 550px;
+        grid-area: picture;
+    }
+
+    .circle-img {
+        display: none;
     }
 
     .title-text {
         color: black;
-        position: static;
         text-align: left;
-        width: 100%;
-        margin-top: 40%;
+        margin-top: 90%;
         padding-left: 10px;
-        padding-top: 30%;
-        margin-bottom: 30px;
+        font-size: 1.563rem;
     }
+
 
     .title-text h2 {
         margin-bottom: 0;
@@ -428,7 +477,6 @@ nav a:hover {
         padding-top: 0;
         font-size: 1.25em;
         padding-left: 10px;
-        padding-bottom: 50%;
         margin-bottom: 0;
     }
 
@@ -438,12 +486,12 @@ nav a:hover {
     }
 
     .portfolio-title {
-        font-size: 2.441em;
         margin-top: 0;
     }
 
     .portfolio-title h2 {
         margin-top: 0;
+        padding-top: 10%;
     }
 
     .portfolio-icon {
@@ -459,17 +507,16 @@ nav a:hover {
         padding: 3%
     }
 
-    .project-info {
-        opacity: 0;
+    .design-container img {
+        width : 400px;
+        height: 400px;
     }
 
-    .project-info:hover {
-        opacity: 70%;
+    .designs-container {
+        flex-direction: row;
+        padding-left: none;
     }
 
-    .project:hover {
-        transform: scale(1.05);
-    }
 }
 
 @media(min-width:1024px) {
@@ -481,6 +528,7 @@ nav a:hover {
         padding: 0 10% 0 10%;
         font-size: 3.052em;
         margin-bottom: 0;
+        margin-top: 40%;
     }
 
     .intro p {
@@ -489,8 +537,20 @@ nav a:hover {
     }
 
     .portfolio-container {
-        background-size: 100%;
-        background-position: top;
+        background-image: url(/img/landscapebg.svg);
+        background-size: cover;
+    }
+
+    .portfolio-title {
+        margin-bottom: 5px;
+    }
+
+    .portfolio-title h2 {
+        padding-top: 20px;
+    }
+
+    .portfolio-container h3 {
+        margin-top: 0;
     }
 
     .portfolio {
@@ -498,4 +558,25 @@ nav a:hover {
         grid-template-columns: auto auto auto;
         justify-items: center;
     }
+
+    .project-info {
+        opacity: 0;
+    }
+
+    .project-info:hover {
+        opacity: 70%;
+    }
+
+    .project:hover {
+        transform: scale(1.05);
+    }
+    
+    .designs-container {
+        padding: 50px;
+    }
+
+    .design h3 {
+        margin-bottom: 0;
+    }
+
 }

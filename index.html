@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/locomotive-scroll.css">
 </head>
+
 <body>
     <!-- Overlay -->
     <div class="transition">
@@ -30,10 +30,11 @@
 
         <div class="intro" id="about">
             <img alt="Sarah Carter" src="img/profile.png" class="profile-pic">
-                <div class="title-text title-slide">
-                    <h1>Hi,</h1>
-                    <h2 >I'm Sarah.</h2>
-                </div>
+            <div class="title-text title-slide">
+                <h1>Hi,</h1>
+                <h2 >I'm Sarah.</h2>
+            </div>
+            <img alt="Sarah Carter" src="img/sarahcircle.png" class="circle-img">
             <p class="text-slide" >I'm a front end developer and designer interested in making your projects <span class="pop">pop</span>.</p>
         </div>
 
@@ -43,11 +44,12 @@
                 <svg class="portfolio-icon">
                     <use xlink:href="img/svg-icons/svg-icons.svg#briefcase"></use>
                 </svg>
-            </div>  
+            </div> 
+            <h3>Coding Projects</h3>
 
             <div class="portfolio">
                 <div class="project">
-                    <img src="img/registration_form.png" alt="screenshot of registration form project">
+                    <img src="img/project-img/registration.png" alt="screenshot of registration form project">
                     <div class="project-info">
                         <h4 class="project-title">Responsive Registration Form</h4>
                         <p class="description">HTML Forms and CSS</p>
@@ -56,7 +58,7 @@
                 </div>
 
                 <div class="project">
-                    <img src="img/web_styleguide.png" alt="screenshot of web style guide">
+                    <img src="img/project-img/webstyle.png" alt="screenshot of web style guide">
                     <div class="project-info">
                         <h4 class="project-title">Web Style Guide</h4>
                         <p class="description">SCSS</p>
@@ -65,7 +67,7 @@
                 </div>
 
                 <div class="project">
-                    <img src="img/gameshowapp.png" alt="screenshot of game show app">
+                    <img src="img/project-img/gameshowapp.png" alt="screenshot of game show app">
                     <div class="project-info">
                         <h4 class="project-title">Game Show App</h4>
                         <p class="description">Javascript</p>
@@ -74,7 +76,7 @@
                 </div>
 
                 <div class="project">
-                    <img src="img/photo_gallery.png" alt="screenshot of photo gallery">
+                    <img src="img/project-img/photogallery.png" alt="screenshot of photo gallery">
                     <div class="project-info">
                         <h4 class="project-title">Interactive Photo Gallery</h4>
                         <p class="description">JQuery</p>
@@ -83,7 +85,7 @@
                 </div>
 
                 <div class="project">
-                    <img src="img/dashboard.png" alt="screenshot of dashboard app">
+                    <img src="img/project-img/dashboard.png" alt="screenshot of dashboard app">
                     <div class="project-info">
                         <h4 class="project-title">WebApp Dashboard</h4>
                         <p class="description">Javascript Charts and Graphs</p>
@@ -92,7 +94,7 @@
                 </div>
 
                 <div class="project">
-                    <img src="img/employee_directory.png" alt="screenshot of employee directory">
+                    <img src="img/project-img/directory.png" alt="screenshot of employee directory">
                     <div class="project-info">
                         <h4 class="project-title">API Employee Directory</h4>
                         <p class="description">Javascript and APIs</p>
@@ -100,6 +102,20 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="design">
+            <h3>Brand and Design Work</h3>
+            <div class="designs-container">
+                <img src="img/carousel/brette.png">
+                <img src="img/carousel/creativemovement.png">
+                <img src="img/carousel/posh_logo.png">
+                <img src="img/carousel/register.png">
+                <img src="img/carousel/tap.png">
+                <img src="img/carousel/various.png">
+            </div>
+            <h4>Check out more of my personal design work on Redbubble:</h4>
+            <a href="https://www.redbubble.com/people/scarterr/explore?asc=u" target="_blank"><img src="img/icons/icons8-redbubble.svg" class="redbubble"></a>
         </div>
 
         <div class="skills">
@@ -113,6 +129,10 @@
                 <li class="box">Bootstrap</li>
                 <li class="box">Tailwind CSS</li>
                 <li class="box">Git/Github</li>
+                <li class="box">Procreate</li>
+                <li class="box">Adobe Creative Suite</li>
+                <li class="box">Sketch</li>
+                <li class="box">Figma</li>
             </ul>
         </div>
 
@@ -138,9 +158,8 @@
             </div>
         </div>
 
-
     </main>
-    <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
