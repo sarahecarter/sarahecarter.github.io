@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     cursor: default;
+    scroll-behavior: smooth;
 }
 
 
@@ -527,6 +528,7 @@ h3 {
 @media(min-width:1024px) {
     .intro {
         grid-template-columns: 550px auto;
+        max-height: 596px;
     }
 
     .title-text {
@@ -538,7 +540,7 @@ h3 {
 
     .intro p {
         font-size: 1.563em;
-        padding: 0 10% 0 10%;
+        padding: 0 10% 5% 10%;
     }
 
     .portfolio-container {
