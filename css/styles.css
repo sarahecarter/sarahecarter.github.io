@@ -218,8 +218,16 @@ h3 {
 }
 
 .project img {
-    height: auto;
+    height: 168px;
     width: 300px;
+}
+
+.proj-btns {
+    display: flex;
+}
+
+.proj-btns a {
+    margin: 10px;
 }
 
 .project {
@@ -276,7 +284,7 @@ h3 {
 .project-link:hover {
     color: white;
     background-color: teal;
-    border: gray;
+    border: 1px solid gray;
 }
 
 /* Design Section and Carousel Styles */
@@ -535,7 +543,7 @@ h3 {
         padding: 0 10% 0 10%;
         font-size: 3.052em;
         margin-bottom: 0;
-        margin-top: 40%;
+        margin-top: 30%;
     }
 
     .intro p {
@@ -586,4 +594,13 @@ h3 {
         margin-bottom: 0;
     }
 
+}
+
+@media(min-width:1024px) {
+    .title-text {
+        padding: 0 10% 0 10%;
+        font-size: 3.052em;
+        margin-bottom: 0;
+        margin-top: 20%;
+    }
 }
